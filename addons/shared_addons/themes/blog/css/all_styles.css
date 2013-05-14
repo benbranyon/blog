@@ -1,0 +1,98 @@
+@font-face {
+	font-family: 'Dobkin';
+	src: url('../fonts/dobkinplain-webfont.eot');
+	src: local('Dobkin'),
+	     url('../fonts/dobkinplain-webfont.ttf') format('truetype'),
+	     url('../fonts/dobkinplain-webfont.svg#font') format('svg');
+}
+
+body {
+	font-family: "Lato", Arial, Helvetica, Geneva, sans-serif;
+}
+
+h2, h3 { font-weight:bold; }
+
+a { color:#737308; }
+a:hover { color:#999900; }
+
+label { display:block; }
+
+.wrapper {
+	margin: 0 auto;
+}
+
+div#logo {
+	background-color: rgba(0, 0, 0, 0.9);
+	color:white;
+	border-radius: 10px;	
+}
+	div#logo a {
+		color:white;
+		text-decoration:none;
+		display:block;
+		padding:20px;
+	}
+	
+	div#logo h1 {
+		font-family:'Dobkin';
+		font-size:35px;
+	}
+
+#top_nav li {
+	display: moz-inline-stack;
+	display: inline-block;
+	zoom: 1;
+	background-color: rgba(0, 0, 0, 0.9);
+	border-radius: 10px;
+}
+
+#top_nav li a {
+	color:white;
+	text-decoration:none;
+	display: moz-inline-stack;
+	display: inline-block;
+	zoom: 1;
+	text-align: center;
+	padding: 20px;
+}
+
+#content {
+	padding: 20px;
+	clear: both;
+	background-color: rgba(0, 0, 0, 0.9);
+	color:white;
+	border-radius: 10px;
+}
+
+#content h2 {
+	margin-bottom:10px;
+}
+
+footer {
+	padding:20px;
+	background-color: rgba(0, 0, 0, 0.9);
+	color:white;
+	border-radius: 10px;
+}
+
+#social_links a:hover {
+	opacity:0.5;
+}
+
+.tweet-widget-title {
+	padding: 10px 0px;
+}
+
+#twitter-rss-feed {
+	border: 1px solid white;
+	border-radius: 10px;
+}
+
+ul.rss {
+	list-style-type:square;
+	list-style-position:inside;
+}
+
+ul.rss li {
+	padding:10px;
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js" lang="en"> <![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<title>{{ settings:site_name }} &raquo; {{template:title}}</title>
+
+	<meta name="author" content="Ben Branyon">
+	<meta name="description" content="Ben Branyon Blog">
+	<meta name="keywords" content="Ben Branyon Web Development">
+
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<base href="{{ url:base }}"/>
+
+	<!-- CSS -->
+	{{ theme:css file="reset.css" }}
+	{{ theme:css file="supersized.css" }}
+	{{ theme:css file="all_styles.css" }}
+	<link rel="stylesheet" href="/addons/shared_addons/themes/blog/css/mobile_styles.css" media="only screen and (min-width:320px) and (max-width: 480px)"/>
+	<link rel="stylesheet" href="/addons/shared_addons/themes/blog/css/styles.css" media="only screen and (min-width: 768px)" />
+	<!--{{ theme:css file="styles.css" }} -->
+
+	{{ theme:favicon }}	
+	<!-- End CSS -->	
+
+	<!-- All Javascript at the bottom, except for Modernizr. -->
+	{{ theme:js file="libs/modernizr.js" }}
+	{{ theme:js file="libs/jquery.js" }}
+	{{ theme:js file="libs/jquery.easing.min.js" }}
+	{{ theme:js file="libs/supersized.3.2.7.min.js" }}
+	{{ theme:js file="libs/prefixfree.js" }}
+
+	<script type="text/javascript">
+		jQuery(function($){
+			$.supersized({
+				//Functionality
+				slide_interval : 3000,
+				transition: 1,
+				transition_speed: 700,
+
+				//Components
+				slide_links : 'blank',
+				slides : [
+						{image : 'http://benbranyon.com/addons/shared_addons/themes/blog/img/crater_lake.jpg'},
+						{image : 'http://benbranyon.com/addons/shared_addons/themes/blog/img/hope_valley.jpg'},
+						{image : 'http://benbranyon.com/addons/shared_addons/themes/blog/img/pyramid_lake.jpg'}
+					]
+			});
+		});
+	</script>
+
+	{{ template:metadata }}
+
+	<!-- Google Analytics -->
+	{{ integration:analytics }}
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div id="logo">
+				<a href="{{ url:base }}"><h1>Ben Branyon</h1><span class="slogan">{{ settings:site_slogan }}</span></a>
+			</div>
+			<nav id="top_nav">
+				<ul>
+					{{ navigation:links group="header" }}
+				</ul>
+			</nav>
+		</header>

@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>{{ settings:site_name }} &raquo; {{template:title}}</title>
+
+	<meta name="author" content="Ben Branyon">
+	<meta name="description" content="Ben Branyon Blog">
+	<meta name="keywords" content="Ben Branyon Web Development">
+	
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<base href="{{ url:base }}"/>
+	<!-- CSS -->
+	{{ theme:css file="bootstrap.css" }}
+	{{ theme:css file="bootstrap-responsive.css" }}
+	{{ theme:css file="styles.css" }}
+
+	{{ theme:favicon }}
+	<!-- END CSS -->
+
+	{{ theme:js file="jquery.js" }}
+	{{ theme:js file="bootstrap.js" }}
+
+	{{ template:metadata }}
+	
+	<!-- Google Analytics -->
+	{{ integration:analytics }}
+</head>
+
+<body>
+	<header>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="brand">
+					<a href="{{ url:base }}"><span>Ben Branyon</span><br /><span class="slogan">{{ settings:site_slogan }}</span></a>
+				</div>
+				<div class="container">
+					<button class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><h4>MENU</h4></button>
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							{{ navigation:links group="header" }}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container">

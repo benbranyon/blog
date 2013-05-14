@@ -1,0 +1,60 @@
+.slogan {
+	font-size:13px;
+}
+
+.navbar ul.nav {
+	margin:10px 0px 0px 0px;
+}
+
+#content {
+	margin-top:20px;
+	padding: 40px 0px;
+}
+
+.page-header {
+	text-align: center;
+}
+
+ul.rss {
+	list-style-type:none;
+	margin: 0px 0px 10px 0px;
+}
+
+ul.rss li {
+	color:white;
+	background-color:#0088cc;
+	padding: 1px 8px 16px 8px;
+	margin-bottom: 18px;
+	-webkit-border-radius: 2px;
+	border-radius: 5px;
+}
+
+ul.rss li a {
+	color:white;
+}
+
+ul.rss li p {
+	margin: 10px 0px;
+}
+
+span.date {
+	float:right;
+}
+
+#social_links {
+	list-style:none;
+	margin: 0px;
+}
+
+#social_links a:hover {
+	opacity:0.5;
+}
+
+#social_links li {
+	float:left;
+}
+
+.footer {
+	background-color:black;
+	padding:30px;
+}
