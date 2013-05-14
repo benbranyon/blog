@@ -1,0 +1,142 @@
+[27-Feb-2013 17:56:00] PHP Fatal error:  Uncaught exception 'Asset_Exception' with message 'Found no files matching addons/shared_addons/themes/blog/js/libs/modernizr.js' in /home2/benbrany/public_html/system/cms/libraries/Asset.php:1130
+Stack trace:
+#0 /home2/benbrany/public_html/system/cms/libraries/Asset.php(780): Asset::find_files('theme::libs/mod...', 'js')
+#1 /home2/benbrany/public_html/system/cms/libraries/Asset.php(720): Asset::get_filepath('libs/modernizr....', 'js', true, false)
+#2 /home2/benbrany/public_html/system/cms/plugins/theme.php(288): Asset::get_filepath_js('libs/modernizr....', true)
+#3 /home2/benbrany/public_html/system/cms/plugins/theme.php(272): Plugin_Theme->js_url('libs/modernizr....')
+#4 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(338): Plugin_Theme->js()
+#5 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(249): Plugins->_process(Array)
+#6 /home2/benbrany/public_html/system/cms/libraries/MY_Parser.php(131): Plugins->locate('system/cms/plug...', 'theme', 'js', Array, '')
+#7 /home2/benbrany/public in /home2/benbrany/public_html/system/cms/libraries/Asset.php on line 1130
+[27-Feb-2013 17:56:02] PHP Fatal error:  Uncaught exception 'Asset_Exception' with message 'Found no files matching addons/shared_addons/themes/blog/js/libs/modernizr.js' in /home2/benbrany/public_html/system/cms/libraries/Asset.php:1130
+Stack trace:
+#0 /home2/benbrany/public_html/system/cms/libraries/Asset.php(780): Asset::find_files('theme::libs/mod...', 'js')
+#1 /home2/benbrany/public_html/system/cms/libraries/Asset.php(720): Asset::get_filepath('libs/modernizr....', 'js', true, false)
+#2 /home2/benbrany/public_html/system/cms/plugins/theme.php(288): Asset::get_filepath_js('libs/modernizr....', true)
+#3 /home2/benbrany/public_html/system/cms/plugins/theme.php(272): Plugin_Theme->js_url('libs/modernizr....')
+#4 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(338): Plugin_Theme->js()
+#5 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(249): Plugins->_process(Array)
+#6 /home2/benbrany/public_html/system/cms/libraries/MY_Parser.php(131): Plugins->locate('system/cms/plug...', 'theme', 'js', Array, '')
+#7 /home2/benbrany/public in /home2/benbrany/public_html/system/cms/libraries/Asset.php on line 1130
+[27-Feb-2013 17:56:50] PHP Fatal error:  Uncaught exception 'Asset_Exception' with message 'Found no files matching addons/shared_addons/themes/blog/js/libs/modernizr.js' in /home2/benbrany/public_html/system/cms/libraries/Asset.php:1130
+Stack trace:
+#0 /home2/benbrany/public_html/system/cms/libraries/Asset.php(780): Asset::find_files('theme::libs/mod...', 'js')
+#1 /home2/benbrany/public_html/system/cms/libraries/Asset.php(720): Asset::get_filepath('libs/modernizr....', 'js', true, false)
+#2 /home2/benbrany/public_html/system/cms/plugins/theme.php(288): Asset::get_filepath_js('libs/modernizr....', true)
+#3 /home2/benbrany/public_html/system/cms/plugins/theme.php(272): Plugin_Theme->js_url('libs/modernizr....')
+#4 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(338): Plugin_Theme->js()
+#5 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(249): Plugins->_process(Array)
+#6 /home2/benbrany/public_html/system/cms/libraries/MY_Parser.php(131): Plugins->locate('system/cms/plug...', 'theme', 'js', Array, '')
+#7 /home2/benbrany/public in /home2/benbrany/public_html/system/cms/libraries/Asset.php on line 1130
+[27-Feb-2013 17:56:51] PHP Fatal error:  Uncaught exception 'Asset_Exception' with message 'Found no files matching addons/shared_addons/themes/blog/js/libs/modernizr.js' in /home2/benbrany/public_html/system/cms/libraries/Asset.php:1130
+Stack trace:
+#0 /home2/benbrany/public_html/system/cms/libraries/Asset.php(780): Asset::find_files('theme::libs/mod...', 'js')
+#1 /home2/benbrany/public_html/system/cms/libraries/Asset.php(720): Asset::get_filepath('libs/modernizr....', 'js', true, false)
+#2 /home2/benbrany/public_html/system/cms/plugins/theme.php(288): Asset::get_filepath_js('libs/modernizr....', true)
+#3 /home2/benbrany/public_html/system/cms/plugins/theme.php(272): Plugin_Theme->js_url('libs/modernizr....')
+#4 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(338): Plugin_Theme->js()
+#5 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(249): Plugins->_process(Array)
+#6 /home2/benbrany/public_html/system/cms/libraries/MY_Parser.php(131): Plugins->locate('system/cms/plug...', 'theme', 'js', Array, '')
+#7 /home2/benbrany/public in /home2/benbrany/public_html/system/cms/libraries/Asset.php on line 1130
+[27-Feb-2013 17:56:52] PHP Fatal error:  Uncaught exception 'Asset_Exception' with message 'Found no files matching addons/shared_addons/themes/blog/js/libs/modernizr.js' in /home2/benbrany/public_html/system/cms/libraries/Asset.php:1130
+Stack trace:
+#0 /home2/benbrany/public_html/system/cms/libraries/Asset.php(780): Asset::find_files('theme::libs/mod...', 'js')
+#1 /home2/benbrany/public_html/system/cms/libraries/Asset.php(720): Asset::get_filepath('libs/modernizr....', 'js', true, false)
+#2 /home2/benbrany/public_html/system/cms/plugins/theme.php(288): Asset::get_filepath_js('libs/modernizr....', true)
+#3 /home2/benbrany/public_html/system/cms/plugins/theme.php(272): Plugin_Theme->js_url('libs/modernizr....')
+#4 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(338): Plugin_Theme->js()
+#5 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(249): Plugins->_process(Array)
+#6 /home2/benbrany/public_html/system/cms/libraries/MY_Parser.php(131): Plugins->locate('system/cms/plug...', 'theme', 'js', Array, '')
+#7 /home2/benbrany/public in /home2/benbrany/public_html/system/cms/libraries/Asset.php on line 1130
+[27-Feb-2013 17:56:53] PHP Fatal error:  Uncaught exception 'Asset_Exception' with message 'Found no files matching addons/shared_addons/themes/blog/js/libs/modernizr.js' in /home2/benbrany/public_html/system/cms/libraries/Asset.php:1130
+Stack trace:
+#0 /home2/benbrany/public_html/system/cms/libraries/Asset.php(780): Asset::find_files('theme::libs/mod...', 'js')
+#1 /home2/benbrany/public_html/system/cms/libraries/Asset.php(720): Asset::get_filepath('libs/modernizr....', 'js', true, false)
+#2 /home2/benbrany/public_html/system/cms/plugins/theme.php(288): Asset::get_filepath_js('libs/modernizr....', true)
+#3 /home2/benbrany/public_html/system/cms/plugins/theme.php(272): Plugin_Theme->js_url('libs/modernizr....')
+#4 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(338): Plugin_Theme->js()
+#5 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(249): Plugins->_process(Array)
+#6 /home2/benbrany/public_html/system/cms/libraries/MY_Parser.php(131): Plugins->locate('system/cms/plug...', 'theme', 'js', Array, '')
+#7 /home2/benbrany/public in /home2/benbrany/public_html/system/cms/libraries/Asset.php on line 1130
+[27-Feb-2013 17:56:53] PHP Fatal error:  Uncaught exception 'Asset_Exception' with message 'Found no files matching addons/shared_addons/themes/blog/js/libs/modernizr.js' in /home2/benbrany/public_html/system/cms/libraries/Asset.php:1130
+Stack trace:
+#0 /home2/benbrany/public_html/system/cms/libraries/Asset.php(780): Asset::find_files('theme::libs/mod...', 'js')
+#1 /home2/benbrany/public_html/system/cms/libraries/Asset.php(720): Asset::get_filepath('libs/modernizr....', 'js', true, false)
+#2 /home2/benbrany/public_html/system/cms/plugins/theme.php(288): Asset::get_filepath_js('libs/modernizr....', true)
+#3 /home2/benbrany/public_html/system/cms/plugins/theme.php(272): Plugin_Theme->js_url('libs/modernizr....')
+#4 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(338): Plugin_Theme->js()
+#5 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(249): Plugins->_process(Array)
+#6 /home2/benbrany/public_html/system/cms/libraries/MY_Parser.php(131): Plugins->locate('system/cms/plug...', 'theme', 'js', Array, '')
+#7 /home2/benbrany/public in /home2/benbrany/public_html/system/cms/libraries/Asset.php on line 1130
+[27-Feb-2013 21:55:54] PHP Fatal error:  Uncaught exception 'Asset_Exception' with message 'Found no files matching addons/shared_addons/themes/blog/css/supersize.css' in /home2/benbrany/public_html/system/cms/libraries/Asset.php:1130
+Stack trace:
+#0 /home2/benbrany/public_html/system/cms/libraries/Asset.php(780): Asset::find_files('theme::supersiz...', 'css')
+#1 /home2/benbrany/public_html/system/cms/libraries/Asset.php(738): Asset::get_filepath('supersize.css', 'css', true, false)
+#2 /home2/benbrany/public_html/system/cms/plugins/theme.php(166): Asset::get_filepath_css('supersize.css', true)
+#3 /home2/benbrany/public_html/system/cms/plugins/theme.php(150): Plugin_Theme->css_url('supersize.css')
+#4 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(338): Plugin_Theme->css()
+#5 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(249): Plugins->_process(Array)
+#6 /home2/benbrany/public_html/system/cms/libraries/MY_Parser.php(131): Plugins->locate('system/cms/plug...', 'theme', 'css', Array, '')
+#7 /home2/benbrany/public_html/system in /home2/benbrany/public_html/system/cms/libraries/Asset.php on line 1130
+[27-Feb-2013 21:55:56] PHP Fatal error:  Uncaught exception 'Asset_Exception' with message 'Found no files matching addons/shared_addons/themes/blog/css/supersize.css' in /home2/benbrany/public_html/system/cms/libraries/Asset.php:1130
+Stack trace:
+#0 /home2/benbrany/public_html/system/cms/libraries/Asset.php(780): Asset::find_files('theme::supersiz...', 'css')
+#1 /home2/benbrany/public_html/system/cms/libraries/Asset.php(738): Asset::get_filepath('supersize.css', 'css', true, false)
+#2 /home2/benbrany/public_html/system/cms/plugins/theme.php(166): Asset::get_filepath_css('supersize.css', true)
+#3 /home2/benbrany/public_html/system/cms/plugins/theme.php(150): Plugin_Theme->css_url('supersize.css')
+#4 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(338): Plugin_Theme->css()
+#5 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(249): Plugins->_process(Array)
+#6 /home2/benbrany/public_html/system/cms/libraries/MY_Parser.php(131): Plugins->locate('system/cms/plug...', 'theme', 'css', Array, '')
+#7 /home2/benbrany/public_html/system in /home2/benbrany/public_html/system/cms/libraries/Asset.php on line 1130
+[27-Feb-2013 21:55:57] PHP Fatal error:  Uncaught exception 'Asset_Exception' with message 'Found no files matching addons/shared_addons/themes/blog/css/supersize.css' in /home2/benbrany/public_html/system/cms/libraries/Asset.php:1130
+Stack trace:
+#0 /home2/benbrany/public_html/system/cms/libraries/Asset.php(780): Asset::find_files('theme::supersiz...', 'css')
+#1 /home2/benbrany/public_html/system/cms/libraries/Asset.php(738): Asset::get_filepath('supersize.css', 'css', true, false)
+#2 /home2/benbrany/public_html/system/cms/plugins/theme.php(166): Asset::get_filepath_css('supersize.css', true)
+#3 /home2/benbrany/public_html/system/cms/plugins/theme.php(150): Plugin_Theme->css_url('supersize.css')
+#4 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(338): Plugin_Theme->css()
+#5 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(249): Plugins->_process(Array)
+#6 /home2/benbrany/public_html/system/cms/libraries/MY_Parser.php(131): Plugins->locate('system/cms/plug...', 'theme', 'css', Array, '')
+#7 /home2/benbrany/public_html/system in /home2/benbrany/public_html/system/cms/libraries/Asset.php on line 1130
+[27-Feb-2013 21:55:58] PHP Fatal error:  Uncaught exception 'Asset_Exception' with message 'Found no files matching addons/shared_addons/themes/blog/css/supersize.css' in /home2/benbrany/public_html/system/cms/libraries/Asset.php:1130
+Stack trace:
+#0 /home2/benbrany/public_html/system/cms/libraries/Asset.php(780): Asset::find_files('theme::supersiz...', 'css')
+#1 /home2/benbrany/public_html/system/cms/libraries/Asset.php(738): Asset::get_filepath('supersize.css', 'css', true, false)
+#2 /home2/benbrany/public_html/system/cms/plugins/theme.php(166): Asset::get_filepath_css('supersize.css', true)
+#3 /home2/benbrany/public_html/system/cms/plugins/theme.php(150): Plugin_Theme->css_url('supersize.css')
+#4 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(338): Plugin_Theme->css()
+#5 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(249): Plugins->_process(Array)
+#6 /home2/benbrany/public_html/system/cms/libraries/MY_Parser.php(131): Plugins->locate('system/cms/plug...', 'theme', 'css', Array, '')
+#7 /home2/benbrany/public_html/system in /home2/benbrany/public_html/system/cms/libraries/Asset.php on line 1130
+[27-Feb-2013 21:55:59] PHP Fatal error:  Uncaught exception 'Asset_Exception' with message 'Found no files matching addons/shared_addons/themes/blog/css/supersize.css' in /home2/benbrany/public_html/system/cms/libraries/Asset.php:1130
+Stack trace:
+#0 /home2/benbrany/public_html/system/cms/libraries/Asset.php(780): Asset::find_files('theme::supersiz...', 'css')
+#1 /home2/benbrany/public_html/system/cms/libraries/Asset.php(738): Asset::get_filepath('supersize.css', 'css', true, false)
+#2 /home2/benbrany/public_html/system/cms/plugins/theme.php(166): Asset::get_filepath_css('supersize.css', true)
+#3 /home2/benbrany/public_html/system/cms/plugins/theme.php(150): Plugin_Theme->css_url('supersize.css')
+#4 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(338): Plugin_Theme->css()
+#5 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(249): Plugins->_process(Array)
+#6 /home2/benbrany/public_html/system/cms/libraries/MY_Parser.php(131): Plugins->locate('system/cms/plug...', 'theme', 'css', Array, '')
+#7 /home2/benbrany/public_html/system in /home2/benbrany/public_html/system/cms/libraries/Asset.php on line 1130
+[13-Mar-2013 15:26:50] PHP Fatal error:  Class 'Widget_Quote' not found in /home2/benbrany/public_html/system/cms/modules/widgets/libraries/Widgets.php on line 463
+[13-Mar-2013 15:28:30] PHP Parse error:  syntax error, unexpected T_STRING, expecting '{' in /home2/benbrany/public_html/addons/shared_addons/widgets/quote/quote.php on line 3
+[06-May-2013 14:50:57] PHP Parse error:  syntax error, unexpected ';' in /home2/benbrany/public_html/system/cms/widgets/twitter_feed/views/display.php on line 5
+[09-May-2013 14:59:51] PHP Parse error:  syntax error, unexpected '=', expecting ']' in /home2/benbrany/public_html/system/cms/config/routes.php on line 61
+[14-May-2013 01:34:47] PHP Parse error:  syntax error, unexpected ';' in /home2/benbrany/public_html/addons/shared_addons/modules/photography/models/photo_gallery_m.php on line 1
+[14-May-2013 01:39:26] PHP Fatal error:  Call to undefined method Admin_Controller::_construct() in /home2/benbrany/public_html/addons/shared_addons/modules/photography/controllers/admin.php on line 15
+[14-May-2013 10:04:21] PHP Parse error:  syntax error, unexpected '}', expecting T_STRING or T_VARIABLE or '{' or '$' in /home2/benbrany/public_html/addons/shared_addons/modules/photography/controllers/admin.php on line 22
+[14-May-2013 12:16:05] PHP Parse error:  syntax error, unexpected '}' in /home2/benbrany/public_html/addons/shared_addons/modules/photography/controllers/admin.php on line 24
+[14-May-2013 12:16:17] PHP Fatal error:  Uncaught exception 'Asset_Exception' with message 'Found no files matching addons/shared_addons/modules/photography/css/admin.css' in /home2/benbrany/public_html/system/cms/libraries/Asset.php:1130
+Stack trace:
+#0 /home2/benbrany/public_html/system/cms/libraries/Asset.php(1250): Asset::find_files('module::admin.c...', 'css')
+#1 /home2/benbrany/public_html/system/cms/libraries/Asset.php(1014): Asset::files_to_render('css', 'extra')
+#2 /home2/benbrany/public_html/system/cms/libraries/Asset.php(887): Asset::render_css('extra', NULL, Array)
+#3 /home2/benbrany/public_html/system/cms/libraries/Template.php(223): Asset::render('extra')
+#4 /home2/benbrany/public_html/addons/shared_addons/modules/photography/controllers/admin.php(33): Template->build('admin/index')
+#5 /home2/benbrany/public_html/system/codeigniter/core/CodeIgniter.php(355): Admin->index()
+#6 /home2/benbrany/public_html/index.php(280): require_once('/home2/benbrany...')
+#7 {main}
+  thrown in /home2/benbrany/public_html/system/cms/libraries/Asset.php on line 1130
+[14-May-2013 14:08:11] PHP Parse error:  syntax error, unexpected ')' in /home2/benbrany/public_html/addons/shared_addons/modules/photography/controllers/admin.php on line 58
+[14-May-2013 14:08:32] PHP Parse error:  syntax error, unexpected ')' in /home2/benbrany/public_html/addons/shared_addons/modules/photography/controllers/admin.php on line 64
+[14-May-2013 14:31:18] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home2/benbrany/public_html/addons/shared_addons/modules/photography/views/admin/index.php on line 15
