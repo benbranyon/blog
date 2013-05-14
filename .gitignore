@@ -3,6 +3,7 @@
 .project
 .settings
 .idea
+BEFOREUPDATE.md
 assets/cache/*
 assets/page_types/*
 !assets/page_types/.htaccess
