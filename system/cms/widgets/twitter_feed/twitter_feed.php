@@ -1,15 +1,14 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
-
 /**
  * Show Twitter streams in your site
  * 
- * @author		Phil Sturgeon
+ * @author  	Phil Sturgeon
  * @author		PyroCMS Dev Team
  * @package		PyroCMS\Core\Widgets
  */
 class Widget_Twitter_feed extends Widgets
 {
-
+ 
 	/**
 	 * The translations for the widget title
 	 *
@@ -18,7 +17,6 @@ class Widget_Twitter_feed extends Widgets
 	public $title = array(
 		'en' => 'Twitter Feed',
 		'el' => 'Ροή Twitter',
-            'fr' => 'Flux Twitter',
 		'nl' => 'Twitterfeed',
 		'br' => 'Feed do Twitter',
 		'pt' => 'Feed do Twitter',
@@ -26,7 +24,7 @@ class Widget_Twitter_feed extends Widgets
 		'id' => 'Twitter Feed',
 		'fi' => 'Twitter Syöte'
 	);
-
+ 
 	/**
 	 * The translations for the widget description
 	 *
@@ -35,7 +33,6 @@ class Widget_Twitter_feed extends Widgets
 	public $description = array(
 		'en' => 'Display Twitter feeds on your website',
 		'el' => 'Προβολή των τελευταίων tweets από το Twitter',
-            'fr' => 'Afficher les flux Twitter sur votre site Internet',
 		'nl' => 'Toon Twitterfeeds op uw website',
 		'br' => 'Mostra os últimos tweets de um usuário do Twitter no seu site.',
 		'pt' => 'Mostra os últimos tweets de um utilizador do Twitter no seu site.',
@@ -43,28 +40,28 @@ class Widget_Twitter_feed extends Widgets
 		'id' => 'Menampilkan koleksi Tweet di situs Anda',
 		'fi' => 'Näytä Twitter syöte sivustollasi',
 	);
-
+ 
 	/**
 	 * The author of the widget
 	 *
 	 * @var string
 	 */
 	public $author = 'Phil Sturgeon';
-
+ 
 	/**
 	 * The author's website.
 	 * 
 	 * @var string 
 	 */
 	public $website = 'http://philsturgeon.co.uk/';
-
+ 
 	/**
 	 * The version of the widget
 	 *
 	 * @var string
 	 */
-	public $version = '1.2.0';
-
+	public $version = '1.2';
+ 
 	/**
 	 * The fields for customizing the options of the widget.
 	 *
@@ -82,14 +79,17 @@ class Widget_Twitter_feed extends Widgets
 			'rules' => 'numeric'
 		)
 	);
-
+ 
 	/**
 	 * The URL used to get statuses from the Twitter API
 	 *
 	 * @var string
 	 */
-	private $feed_url = 'http://api.twitter.com/1/statuses/user_timeline.json?trim_user=1&include_rts=1';
-
+    private $twitter_keys = array('consumer_key' => 'ILLdAkioj1vHj5zNkXiKYw',
+            'consumer_secret' => 'f2D2iTEq0fXZzKk0esaPUeWy3AwY7NCp8u8F4G0T2w',
+            'oauth_token' => '392932606-rsymD8ieI80bgpkH76eftlYUfk6UYu6znROvC7cg',
+            'oauth_token_secret' => 'LzmkNZpPCZOiBX3r3YMau9FJ6I8WeFWCgKjHYX9tU');
+ 
 	/**
 	 * The main function of the widget.
 	 *
@@ -98,50 +98,52 @@ class Widget_Twitter_feed extends Widgets
 	 */
 	public function run($options)
 	{
-		if ( ! $tweets = $this->pyrocache->get('twitter-'.$options['username'].'-'.$options['number']))
+        $cache_key = sprintf('twitter-%s-%s',$options['username'], $options['number']);
+ 
+		if ( ! $tweets = $this->pyrocache->get($cache_key) )
 		{
-			$url_segments = '&screen_name='.$options['username'].'&count='.$options['number'];
-
-			// set a timeout of 10 seconds in case twitter is down when the cache is expired
-			$opts = array(
-				'http' => array(
-					'method' => 'GET',
-					'timeout' => 10,
-					)
-				);
-
-			$context = stream_context_create($opts);
-
-			$tweets = json_decode(@file_get_contents($this->feed_url.$url_segments, false, $context));
-
-			$this->pyrocache->write($tweets, 'twitter-'.$options['username'].'-'.$options['number'], $this->settings->twitter_cache);
-		}
-
+            $twitter_oauth = new Twitter($this->twitter_keys['consumer_key'], 
+                                      $this->twitter_keys['consumer_secret'], 
+                                      $this->twitter_keys['oauth_token'], 
+                                      $this->twitter_keys['oauth_token_secret']);
+ 
+            $params = array('screen_name' => $options['username'],
+                            'count' => $options['number'],
+                            'trim_user' => 1,
+                            'include_rts' => 1,
+                            'exclude_replies' => 1);
+ 
+            $tweets = $twitter_oauth->get('statuses/user_timeline', $params);
+ 
+			$this->pyrocache->write($tweets, $cache_key, $this->settings->twitter_cache);
+        }
+ 
 		$patterns = array(
 			// Detect URL's
 			'((https?|ftp|gopher|telnet|file|notes|ms-help):((//)|(\\\\))+[\w\d:#@%/;$()~_?\+-=\\\.&]*)' => '<a href="$0" target="_blank">$0</a>',
 			// Detect Email
 			'|([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,6})|i' => '<a href="mailto:$1">$1</a>',
 			// Detect Twitter @usernames
-			'/(^|\s)@([a-z0-9_]+)/i' => '$1<a href="http://www.twitter.com/$2">@$2</a>',
+			'| @([a-z0-9-_]+)|i' => '<a href="https://twitter.com/$1" target="_blank">$0</a>',
 			// Detect Twitter #tags
 			'|#([a-z0-9-_]+)|i' => '<a href="https://twitter.com/search?q=%23$1" target="_blank">$0</a>'
 		);
-
+ 
 		if ($tweets)
 		{
-			foreach ($tweets as &$tweet)
+ 
+      foreach ($tweets as &$tweet)
 			{
-				$tweet->text = str_replace($options['username'].': ', '', $tweet->text);
-				$tweet->text = preg_replace(array_keys($patterns), $patterns, $tweet->text);
+                $tweet->text = str_replace($options['username'].': ', '', $tweet->text);
+                $tweet->text = preg_replace(array_keys($patterns), $patterns, $tweet->text);
 			}
 		}
-
+ 
 		// Store the feed items
 		return array(
 			'username' => $options['username'],
 			'tweets' => $tweets ? $tweets : array(),
 		);
 	}
-
+ 
 }

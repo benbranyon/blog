@@ -1,3 +1,4 @@
+@import url('//fonts.googleapis.com/css?family=Oswald|Noticia+Text');
 /*!
  * Bootstrap v2.3.1
  *
@@ -804,8 +805,9 @@ h4 small {
 }
 
 .page-header {
+  font-family: 'Oswald', sans-serif;
   padding-bottom: 9px;
-  margin: 20px 0 30px;
+  margin: 30px 0 30px;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -4405,9 +4407,10 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   display: block;
   float: left;
-  padding: 10px 20px 10px;
+  padding: 25px 20px 15px;
   margin-left: -20px;
-  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
   font-weight: 200;
   color: #777777;
   text-shadow: 0 1px 0 #ffffff;
@@ -4603,6 +4606,9 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav > li > a {
   float: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  line-height: 30px;
   padding: 10px 15px 10px;
   color: #777777;
   text-decoration: none;

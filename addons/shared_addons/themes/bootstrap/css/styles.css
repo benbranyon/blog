@@ -7,8 +7,12 @@
 }
 
 #content {
-	margin-top:20px;
+	margin-top:40px;
 	padding: 40px 0px;
+}
+
+.main {
+	text-align:center;
 }
 
 .page-header {
@@ -41,9 +45,20 @@ span.date {
 	float:right;
 }
 
+#twitter-rss-feed {
+	text-align:left;
+}
+
+#copyright {
+	color:#999999;
+	float:left;
+	margin-top:20px;
+}
+
 #social_links {
 	list-style:none;
 	margin: 0px;
+	float:left;
 }
 
 #social_links a:hover {

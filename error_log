@@ -140,3 +140,38 @@ Stack trace:
 [14-May-2013 14:08:11] PHP Parse error:  syntax error, unexpected ')' in /home2/benbrany/public_html/addons/shared_addons/modules/photography/controllers/admin.php on line 58
 [14-May-2013 14:08:32] PHP Parse error:  syntax error, unexpected ')' in /home2/benbrany/public_html/addons/shared_addons/modules/photography/controllers/admin.php on line 64
 [14-May-2013 14:31:18] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home2/benbrany/public_html/addons/shared_addons/modules/photography/views/admin/index.php on line 15
+[24-Jul-2013 10:39:04] PHP Parse error:  syntax error, unexpected T_STRING, expecting T_FUNCTION in /home2/benbrany/public_html/system/cms/widgets/twitter_feed/twitter_feed.php on line 13
+[24-Jul-2013 10:39:50] PHP Parse error:  syntax error, unexpected '*', expecting T_FUNCTION in /home2/benbrany/public_html/system/cms/widgets/twitter_feed/twitter_feed.php on line 12
+[24-Jul-2013 10:40:25] PHP Parse error:  syntax error, unexpected T_CLASS, expecting T_FUNCTION in /home2/benbrany/public_html/system/cms/widgets/twitter_feed/twitter_feed.php on line 17
+[24-Jul-2013 10:41:00] PHP Parse error:  syntax error, unexpected '*' in /home2/benbrany/public_html/system/cms/widgets/twitter_feed/twitter_feed.php on line 149
+[24-Jul-2013 10:42:32] PHP Parse error:  syntax error, unexpected '*' in /home2/benbrany/public_html/system/cms/widgets/twitter_feed/twitter_feed.php on line 149
+[24-Jul-2013 10:42:35] PHP Parse error:  syntax error, unexpected '*' in /home2/benbrany/public_html/system/cms/widgets/twitter_feed/twitter_feed.php on line 149
+[24-Jul-2013 10:43:43] PHP Fatal error:  Class 'Widget_Twitter_feed' not found in /home2/benbrany/public_html/system/cms/modules/widgets/libraries/Widgets.php on line 463
+[24-Jul-2013 11:01:28] PHP Parse error:  syntax error, unexpected '&' in /home2/benbrany/public_html/system/cms/widgets/twitter_feed/twitter_feed.php on line 137
+[24-Jul-2013 14:48:04] PHP Fatal error:  Uncaught exception 'Exception' with message 'Undefined callback "check_title" in admin' in /home2/benbrany/public_html/system/cms/libraries/MY_Form_validation.php:273
+Stack trace:
+#0 /home2/benbrany/public_html/system/codeigniter/libraries/Form_validation.php(469): MY_Form_validation->_execute(Array, Array, 'Test')
+#1 /home2/benbrany/public_html/addons/shared_addons/modules/photography/controllers/admin.php(60): CI_Form_validation->run()
+#2 /home2/benbrany/public_html/system/codeigniter/core/CodeIgniter.php(355): Admin->create()
+#3 /home2/benbrany/public_html/index.php(280): require_once('/home2/benbrany...')
+#4 {main}
+  thrown in /home2/benbrany/public_html/system/cms/libraries/MY_Form_validation.php on line 273
+[24-Jul-2013 14:50:34] PHP Fatal error:  Uncaught exception 'Exception' with message 'class 'Photo_gallery_m' does not have a method 'create'' in /home2/benbrany/public_html/system/cms/core/MY_Model.php:99
+Stack trace:
+#0 /home2/benbrany/public_html/addons/shared_addons/modules/photography/controllers/admin.php(63): MY_Model->__call('create', Array)
+#1 /home2/benbrany/public_html/addons/shared_addons/modules/photography/controllers/admin.php(63): Photo_gallery_m->create(Array)
+#2 /home2/benbrany/public_html/system/codeigniter/core/CodeIgniter.php(355): Admin->create()
+#3 /home2/benbrany/public_html/index.php(280): require_once('/home2/benbrany...')
+#4 {main}
+  thrown in /home2/benbrany/public_html/system/cms/core/MY_Model.php on line 99
+[24-Jul-2013 16:38:20] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /home2/benbrany/public_html/addons/shared_addons/modules/photography/views/display.php on line 6
+[26-Jul-2013 15:54:24] PHP Fatal error:  Uncaught exception 'Asset_Exception' with message 'Found no files matching addons/shared_addons/themes/bootstrap/css/supersized.css' in /home2/benbrany/public_html/system/cms/libraries/Asset.php:1130
+Stack trace:
+#0 /home2/benbrany/public_html/system/cms/libraries/Asset.php(780): Asset::find_files('theme::supersiz...', 'css')
+#1 /home2/benbrany/public_html/system/cms/libraries/Asset.php(738): Asset::get_filepath('supersized.css', 'css', true, false)
+#2 /home2/benbrany/public_html/system/cms/plugins/theme.php(166): Asset::get_filepath_css('supersized.css', true)
+#3 /home2/benbrany/public_html/system/cms/plugins/theme.php(150): Plugin_Theme->css_url('supersized.css')
+#4 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(338): Plugin_Theme->css()
+#5 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(249): Plugins->_process(Array)
+#6 /home2/benbrany/public_html/system/cms/libraries/MY_Parser.php(131): Plugins->locate('system/cms/plug...', 'theme', 'css', Array, '')
+#7 /home2/benbrany/public_ht in /home2/benbrany/public_html/system/cms/libraries/Asset.php on line 1130
