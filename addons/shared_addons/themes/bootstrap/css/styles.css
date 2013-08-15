@@ -1,7 +1,3 @@
-.slogan {
-	font-size:13px;
-}
-
 .navbar ul.nav {
 	margin:10px 0px 0px 0px;
 }
@@ -11,53 +7,11 @@
 	padding: 40px 0px;
 }
 
-.main {
-	text-align:center;
-}
-
-.page-header {
-	text-align: center;
-}
-
-ul.rss {
-	list-style-type:none;
-	margin: 0px 0px 10px 0px;
-}
-
-ul.rss li {
-	color:white;
-	background-color:#0088cc;
-	padding: 1px 8px 16px 8px;
-	margin-bottom: 18px;
-	-webkit-border-radius: 2px;
-	border-radius: 5px;
-}
-
-ul.rss li a {
-	color:white;
-}
-
-ul.rss li p {
-	margin: 10px 0px;
-}
-
-span.date {
-	float:right;
-}
-
-#twitter-rss-feed {
-	text-align:left;
-}
-
 #copyright {
-	color:#999999;
 	float:left;
-	margin-top:20px;
 }
 
 #social_links {
-	list-style:none;
-	margin: 0px;
 	float:left;
 }
 
@@ -69,7 +23,3 @@ span.date {
 	float:left;
 }
 
-.footer {
-	background-color:black;
-	padding:30px;
-}

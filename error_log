@@ -175,3 +175,13 @@ Stack trace:
 #5 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(249): Plugins->_process(Array)
 #6 /home2/benbrany/public_html/system/cms/libraries/MY_Parser.php(131): Plugins->locate('system/cms/plug...', 'theme', 'css', Array, '')
 #7 /home2/benbrany/public_ht in /home2/benbrany/public_html/system/cms/libraries/Asset.php on line 1130
+[07-Aug-2013 17:28:26] PHP Fatal error:  Uncaught exception 'Asset_Exception' with message 'Found no files matching addons/shared_addons/themes/bootstrap/css/all_styles.css' in /home2/benbrany/public_html/system/cms/libraries/Asset.php:1130
+Stack trace:
+#0 /home2/benbrany/public_html/system/cms/libraries/Asset.php(780): Asset::find_files('theme::all_styl...', 'css')
+#1 /home2/benbrany/public_html/system/cms/libraries/Asset.php(738): Asset::get_filepath('all_styles.css', 'css', true, false)
+#2 /home2/benbrany/public_html/system/cms/plugins/theme.php(166): Asset::get_filepath_css('all_styles.css', true)
+#3 /home2/benbrany/public_html/system/cms/plugins/theme.php(150): Plugin_Theme->css_url('all_styles.css')
+#4 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(338): Plugin_Theme->css()
+#5 /home2/benbrany/public_html/system/cms/libraries/Plugins.php(249): Plugins->_process(Array)
+#6 /home2/benbrany/public_html/system/cms/libraries/MY_Parser.php(131): Plugins->locate('system/cms/plug...', 'theme', 'css', Array, '')
+#7 /home2/benbrany/public_ht in /home2/benbrany/public_html/system/cms/libraries/Asset.php on line 1130
