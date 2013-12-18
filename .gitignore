@@ -15,6 +15,7 @@ system/cms/config/database.php
 system/cms/logs/log-*.php
 nbproject/
 uploads/*
-
+*.sublime-workspace
+*.sublime-project
 system/cms/config/config.php
 system/cms/config/database.php
